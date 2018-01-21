@@ -61,9 +61,12 @@ set laststatus=2
 set cursorline
 
 " colors
-set background=dark
-colorscheme molokai
-set guifont=Source\ Code\ Pro:h18
+try
+  set background=dark
+  set guifont=Source\ Code\ Pro:h18
+  colorscheme molokai
+catch
+endtry
 
 set incsearch
 set ignorecase
@@ -89,7 +92,7 @@ nmap <S-Tab> :bn<CR>
 nmap <Leader>s :FSHere<cr>
 
 " YouCompleteMe
-let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/.ycm_extra_conf.py"
+let g:ycm_global_ycm_extra_conf = "~/.ycm_extra_conf.py"
 
 " pymode
 let g:pymode_folding = 0
