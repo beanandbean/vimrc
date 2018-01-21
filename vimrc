@@ -34,6 +34,10 @@ Plugin 'python-mode/python-mode'
 " HTML
 Plugin 'mattn/emmet-vim'
 
+" git
+Plugin 'gregsexton/gitv'
+Plugin 'tpope/vim-fugitive'
+
 " Theme
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tomasr/molokai'
